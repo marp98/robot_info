@@ -152,7 +152,7 @@ include_directories(
 add_executable(robot_info_node src/robot_info_main.cpp src/robot_info_class.cpp)
 target_link_libraries(robot_info_node ${catkin_LIBRARIES})
 
-add_executable(agv_robot_info_node src/agv_robot_info_main.cpp src/agv_robot_info_class.cpp src/robot_info_class.cpp)
+add_executable(agv_robot_info_node src/agv_robot_info_main.cpp src/agv_robot_info_class.cpp src/robot_info_class.cpp src/hydraulic_system_monitor.cpp)
 target_link_libraries(agv_robot_info_node ${catkin_LIBRARIES})
 
 #############

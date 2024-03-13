@@ -5,9 +5,9 @@ int main(int argc, char** argv) {
     ros::init(argc, argv, "agv_robot_info_node");
     ros::NodeHandle nh;
 
-    AGVRobotInfo agv_robot("Mir100", "567A359", "169.254.5.180", "3.5.8", "100 Kg", nh);
-    
-    ros::Rate loop_rate(1); 
+    AGVRobotInfo agv_robot("Mir100", "567A359", "169.254.5.180", "3.5.8", "100 Kg", "45 °C", "100%", "250 Bar", nh);
+
+    ros::Rate loop_rate(1);
 
     while (ros::ok()) {
         agv_robot.publish_data();
